@@ -10,6 +10,10 @@ app.get('/', (req, res) => {
   res.render('home.ejs');
 })
 
+app.get('/uploadImage', (req, res) => {
+  res.render('photo.ejs');
+})
+
 app.listen(3000, () => {
   console.log("Listening on Port 3000");
 })
